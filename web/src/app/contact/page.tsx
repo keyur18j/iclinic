@@ -44,7 +44,7 @@ export default function ContactPage() {
       <div className="space-y-4">
         <h1 className="text-4xl font-bold">Contact us</h1>
         <p className="text-lg text-slate-600 dark:text-slate-400">
-          Have questions about iMedClinic? We&apos;re here to help. Send us a message
+          Have questions about iClinic? We&apos;re here to help. Send us a message
           and we&apos;ll get back to you as soon as possible.
         </p>
       </div>

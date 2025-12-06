@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ImpactBanner } from "@/components/ImpactBanner";
+import { FeatureStream } from "@/components/FeatureStream";
 
 export default function Home() {
   return (
@@ -164,11 +165,11 @@ export default function Home() {
           {[
             {
               question: "Is this HIPAA-compliant?",
-              answer: "Yes. iMedClinic is built with HIPAA-focused design principles and uses secure, encrypted infrastructure to protect patient data.",
+              answer: "Yes. iClinic is built with HIPAA-focused design principles and uses secure, encrypted infrastructure to protect patient data.",
             },
             {
               question: "Does it work with my EHR?",
-              answer: "iMedClinic uses standards-based integration protocols. We support integration with major EHR systems. Contact us for specific compatibility details.",
+              answer: "iClinic uses standards-based integration protocols. We support integration with major EHR systems. Contact us for specific compatibility details.",
             },
             {
               question: "How long does setup take?",
@@ -193,6 +194,8 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      <FeatureStream />
 
       {/* Impact / ROI Banner */}
       <ImpactBanner />

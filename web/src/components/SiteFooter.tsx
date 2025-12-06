@@ -52,13 +52,13 @@ export default function SiteFooter() {
               <div className="flex h-8 w-8 items-center justify-center rounded bg-sky-500 text-sm font-bold text-black">
                 iM
               </div>
-              <span className="text-xl font-semibold">iMedClinic</span>
+              <span className="text-xl font-semibold">iClinic</span>
             </div>
 
             {/* Tagline pill */}
             <div>
               <span className="inline-flex items-center rounded-full border border-slate-700 px-4 py-1 text-xs text-slate-200">
-                It&apos;s not magic. It&apos;s iMedClinic AI.
+                It&apos;s not magic. It&apos;s iClinic AI.
               </span>
             </div>
 
@@ -71,10 +71,10 @@ export default function SiteFooter() {
                 Get Started
               </Link>
               <a
-                href="mailto:info@imedclinic.ai"
+                href="mailto:info@iClinic.ai"
                 className="inline-flex items-center justify-center rounded-full bg-slate-900 px-4 py-2 text-sm text-slate-100 border border-slate-700 hover:bg-slate-800 transition"
               >
-                info@imedclinic.ai
+                info@iClinic.ai
               </a>
             </div>
           </div>
@@ -185,7 +185,7 @@ export default function SiteFooter() {
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-4 text-xs text-slate-500 md:flex-row md:justify-between">
           {/* Left - Copyright */}
           <div>
-            © {currentYear} iMedClinic. All rights reserved.
+            © {currentYear} iClinic. All rights reserved.
           </div>
 
           {/* Right - Social icons + Privacy/Terms */}
@@ -193,7 +193,7 @@ export default function SiteFooter() {
             {/* Social icons */}
             <div className="flex items-center space-x-4">
               <a
-                href="https://www.linkedin.com/company/imedclinic"
+                href="https://www.linkedin.com/company/iClinic"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn"
@@ -202,7 +202,7 @@ export default function SiteFooter() {
                 <LinkedInIcon />
               </a>
               <a
-                href="https://www.youtube.com/@imedclinic"
+                href="https://www.youtube.com/@iClinic"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="YouTube"
@@ -211,7 +211,7 @@ export default function SiteFooter() {
                 <YouTubeIcon />
               </a>
               <a
-                href="https://twitter.com/imedclinic"
+                href="https://twitter.com/iClinic"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Twitter"

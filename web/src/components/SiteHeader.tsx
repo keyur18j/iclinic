@@ -16,7 +16,7 @@ export default function SiteHeader() {
         {/* Left side - Brand */}
         <Link href="/" className="flex items-center gap-2">
           <span className="rounded-full bg-sky-500/10 px-3 py-1 text-xs font-semibold text-sky-600 dark:text-sky-400">
-            iMedClinic
+            iClinic
           </span>
           <span className="text-xs text-slate-600 dark:text-slate-400 hidden sm:inline">
             AI front-desk for clinics

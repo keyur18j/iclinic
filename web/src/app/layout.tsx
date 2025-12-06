@@ -6,7 +6,7 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "iMedClinic – AI Front-Desk for Clinics",
+  title: "iClinic – AI Front-Desk for Clinics",
   description: "AI front-desk for clinics: instant answers, 24/7 scheduling, refills & messaging.",
 };
 

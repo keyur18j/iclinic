@@ -2,7 +2,7 @@ export default function AboutUsPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 space-y-12">
       <div className="space-y-4">
-        <h1 className="text-4xl font-bold">About iMedClinic</h1>
+        <h1 className="text-4xl font-bold">About iClinic</h1>
         <p className="text-lg text-slate-600 dark:text-slate-400 max-w-3xl">
           We&apos;re on a mission to modernize clinic front-desks with AI, keeping
           humans in control while automating routine operations.
@@ -13,7 +13,7 @@ export default function AboutUsPage() {
         <h2 className="text-2xl font-semibold">Our mission</h2>
         <div className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 p-6">
           <p className="text-slate-600 dark:text-slate-400">
-            iMedClinic was founded to solve a critical problem facing healthcare clinics
+            iClinic was founded to solve a critical problem facing healthcare clinics
             today: the overwhelming burden on front-desk staff and the frustration patients
             experience when they can&apos;t reach their clinic. We believe AI should augment
             human capabilities, not replace them. Our AI front-desk handles routine inquiries,
@@ -27,14 +27,14 @@ export default function AboutUsPage() {
         <h2 className="text-2xl font-semibold">Who we serve</h2>
         <div className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 p-6">
           <p className="text-slate-600 dark:text-slate-400 mb-4">
-            iMedClinic is designed for small to mid-sized clinics and multi-location practices
+            iClinic is designed for small to mid-sized clinics and multi-location practices
             that want to improve patient access without the cost and complexity of expanding
             their front-desk team. Whether you&apos;re a single-location family practice or
             a multi-site specialty group, our solution scales to meet your needs.
           </p>
           <p className="text-slate-600 dark:text-slate-400">
             We understand the unique challenges of healthcare operations, from HIPAA compliance
-            to EHR integration, and we&apos;ve built iMedClinic with these requirements at
+            to EHR integration, and we&apos;ve built iClinic with these requirements at
             the core of our design.
           </p>
         </div>
@@ -53,7 +53,7 @@ export default function AboutUsPage() {
           <div className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 p-6 space-y-2">
             <h3 className="font-semibold text-lg">Security & HIPAA focus</h3>
             <p className="text-sm text-slate-600 dark:text-slate-400">
-              Every aspect of iMedClinic is designed with HIPAA compliance in mind, from
+              Every aspect of iClinic is designed with HIPAA compliance in mind, from
               encrypted communications to secure data handling and audit trails.
             </p>
           </div>
@@ -78,7 +78,7 @@ export default function AboutUsPage() {
         <h2 className="text-2xl font-semibold">Founder story</h2>
         <div className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 p-6">
           <p className="text-slate-600 dark:text-slate-400">
-            iMedClinic was born from firsthand experience with the challenges facing modern
+            iClinic was born from firsthand experience with the challenges facing modern
             healthcare clinics. After witnessing the strain on front-desk staff and the
             frustration of patients unable to reach their providers, we set out to build
             a solution that leverages AI to bridge this gap. Our team combines deep expertise

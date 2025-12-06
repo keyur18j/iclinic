@@ -24,3 +24,21 @@ body {
   color: var(--foreground);
   @apply font-sans antialiased;
 }
+
+@keyframes marquee-smooth {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-smooth {
+  animation: marquee-smooth 55s linear infinite;
+}
+
+/* Pause marquee when hovering anywhere over the section */
+.feature-stream:hover .marquee-smooth {
+  animation-play-state: paused;
+}

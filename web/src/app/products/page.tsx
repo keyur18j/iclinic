@@ -4,7 +4,7 @@ export default function ProductsPage() {
       <div className="space-y-4">
         <h1 className="text-4xl font-bold">Products</h1>
         <p className="text-lg text-slate-600 dark:text-slate-400 max-w-3xl">
-          iMedClinic&apos;s AI front-desk solution automates routine clinic operations,
+          iClinic&apos;s AI front-desk solution automates routine clinic operations,
           allowing your staff to focus on patient care while ensuring every call and message
           is handled professionally and efficiently.
         </p>

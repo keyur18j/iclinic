@@ -65,7 +65,7 @@ export default function PricingPage() {
         <h2 className="text-2xl font-semibold text-center">Return on investment</h2>
         <div className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 p-6 space-y-4">
           <p className="text-slate-600 dark:text-slate-400">
-            At $250/month per provider, iMedClinic pays for itself with just one additional
+            At $250/month per provider, iClinic pays for itself with just one additional
             new patient per month or by preventing a few missed appointments. Most clinics
             see a positive ROI within the first month.
           </p>

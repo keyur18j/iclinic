@@ -52,7 +52,7 @@ export default function BookDemoPage() {
       <div className="space-y-4">
         <h1 className="text-4xl font-bold">Book a demo</h1>
         <p className="text-lg text-slate-600 dark:text-slate-400">
-          See iMedClinic in action. Schedule a personalized demo to learn how our AI
+          See iClinic in action. Schedule a personalized demo to learn how our AI
           front-desk can transform your clinic&apos;s operations.
         </p>
       </div>

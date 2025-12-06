@@ -68,7 +68,7 @@ export default function BusinessPage() {
             </ul>
           </div>
           <div className="rounded-xl border-2 border-sky-500 dark:border-sky-400 bg-sky-50/50 dark:bg-sky-950/20 p-6 space-y-4">
-            <h3 className="font-semibold text-lg">AI front-desk (iMedClinic)</h3>
+            <h3 className="font-semibold text-lg">AI front-desk (iClinic)</h3>
             <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-400">
               <li>• Cost-effective fixed pricing</li>
               <li>• True 24/7 instant response</li>

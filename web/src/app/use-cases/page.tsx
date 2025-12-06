@@ -3,7 +3,7 @@ export default function UseCasesPage() {
     {
       title: "New patient intake",
       scenario: "A new patient calls to schedule their first appointment and has questions about insurance, location, and what to bring.",
-      solution: "iMedClinic answers immediately, collects insurance information, explains the intake process, and books the appointment. All details are automatically logged in your EHR for review.",
+      solution: "iClinic answers immediately, collects insurance information, explains the intake process, and books the appointment. All details are automatically logged in your EHR for review.",
     },
     {
       title: "Existing patient rescheduling",
@@ -13,7 +13,7 @@ export default function UseCasesPage() {
     {
       title: "Medication refill request handling",
       scenario: "A patient calls requesting a refill of their prescription but isn&apos;sure of the medication name or dosage.",
-      solution: "iMedClinic asks clarifying questions, retrieves the patient&apos;s medication history from your EHR, and routes the request to the appropriate provider with all necessary context.",
+      solution: "iClinic asks clarifying questions, retrieves the patient&apos;s medication history from your EHR, and routes the request to the appropriate provider with all necessary context.",
     },
     {
       title: "After-hours coverage",
@@ -23,7 +23,7 @@ export default function UseCasesPage() {
     {
       title: "Multi-location routing",
       scenario: "A patient calls but isn&apos;t sure which location they should visit—Aliana, Cinco Ranch/Katy, or Sugarland.",
-      solution: "iMedClinic identifies the patient&apos;s location based on their address or preference, routes them to the nearest clinic, and ensures their appointment is booked at the correct location.",
+      solution: "iClinic identifies the patient&apos;s location based on their address or preference, routes them to the nearest clinic, and ensures their appointment is booked at the correct location.",
     },
   ];
 
@@ -32,7 +32,7 @@ export default function UseCasesPage() {
       <div className="space-y-4">
         <h1 className="text-4xl font-bold">Use cases</h1>
         <p className="text-lg text-slate-600 dark:text-slate-400 max-w-3xl">
-          See how iMedClinic handles common scenarios to improve your clinic&apos;s
+          See how iClinic handles common scenarios to improve your clinic&apos;s
           efficiency and patient experience.
         </p>
       </div>
@@ -52,7 +52,7 @@ export default function UseCasesPage() {
             </div>
             <div className="space-y-2">
               <p className="font-medium text-slate-700 dark:text-slate-300">
-                How iMedClinic helps:
+                How iClinic helps:
               </p>
               <p className="text-slate-600 dark:text-slate-400">{useCase.solution}</p>
             </div>
