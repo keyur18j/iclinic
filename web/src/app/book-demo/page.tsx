@@ -51,7 +51,7 @@ export default function BookDemoPage() {
     <div className="mx-auto max-w-3xl px-4 py-12 space-y-8">
       <div className="space-y-4">
         <h1 className="text-4xl font-bold">Book a demo</h1>
-        <p className="text-lg text-slate-600 dark:text-slate-400">
+        <p className="text-lg text-gray-600 dark:text-gray-400">
           See iClinic in action. Schedule a personalized demo to learn how our AI
           front-desk can transform your clinic&apos;s operations.
         </p>
@@ -61,7 +61,7 @@ export default function BookDemoPage() {
         <div className="space-y-2">
           <label
             htmlFor="clinicName"
-            className="text-xs font-medium text-slate-700 dark:text-slate-300 block"
+            className="text-xs font-medium text-gray-700 dark:text-gray-300 block"
           >
             Clinic name <span className="text-red-500">*</span>
           </label>
@@ -72,14 +72,14 @@ export default function BookDemoPage() {
             required
             value={formData.clinicName}
             onChange={handleChange}
-            className="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500"
+            className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold"
           />
         </div>
 
         <div className="space-y-2">
           <label
             htmlFor="numberOfProviders"
-            className="text-xs font-medium text-slate-700 dark:text-slate-300 block"
+            className="text-xs font-medium text-gray-700 dark:text-gray-300 block"
           >
             Number of providers <span className="text-red-500">*</span>
           </label>
@@ -91,14 +91,14 @@ export default function BookDemoPage() {
             min="1"
             value={formData.numberOfProviders}
             onChange={handleChange}
-            className="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500"
+            className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold"
           />
         </div>
 
         <div className="space-y-2">
           <label
             htmlFor="contactName"
-            className="text-xs font-medium text-slate-700 dark:text-slate-300 block"
+            className="text-xs font-medium text-gray-700 dark:text-gray-300 block"
           >
             Contact person name <span className="text-red-500">*</span>
           </label>
@@ -109,14 +109,14 @@ export default function BookDemoPage() {
             required
             value={formData.contactName}
             onChange={handleChange}
-            className="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500"
+            className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold"
           />
         </div>
 
         <div className="space-y-2">
           <label
             htmlFor="email"
-            className="text-xs font-medium text-slate-700 dark:text-slate-300 block"
+            className="text-xs font-medium text-gray-700 dark:text-gray-300 block"
           >
             Email <span className="text-red-500">*</span>
           </label>
@@ -127,14 +127,14 @@ export default function BookDemoPage() {
             required
             value={formData.email}
             onChange={handleChange}
-            className="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500"
+            className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold"
           />
         </div>
 
         <div className="space-y-2">
           <label
             htmlFor="phone"
-            className="text-xs font-medium text-slate-700 dark:text-slate-300 block"
+            className="text-xs font-medium text-gray-700 dark:text-gray-300 block"
           >
             Phone for demo
           </label>
@@ -144,9 +144,9 @@ export default function BookDemoPage() {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500"
+            className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold"
           />
-          <p className="text-xs text-slate-500 dark:text-slate-400">
+          <p className="text-xs text-gray-500 dark:text-gray-400">
             Recommended for scheduling purposes
           </p>
         </div>
@@ -154,7 +154,7 @@ export default function BookDemoPage() {
         <div className="space-y-2">
           <label
             htmlFor="preferredTime"
-            className="text-xs font-medium text-slate-700 dark:text-slate-300 block"
+            className="text-xs font-medium text-gray-700 dark:text-gray-300 block"
           >
             Preferred time window
           </label>
@@ -165,7 +165,7 @@ export default function BookDemoPage() {
             value={formData.preferredTime}
             onChange={handleChange}
             placeholder="e.g., Weekday mornings, Tuesday afternoons, etc."
-            className="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 resize-none"
+            className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold resize-none"
           />
         </div>
 
@@ -187,7 +187,7 @@ export default function BookDemoPage() {
 
         <button
           type="submit"
-          className="bg-sky-500 text-background rounded-lg px-6 py-3 text-sm font-semibold hover:bg-sky-600 transition w-full sm:w-auto"
+          className="bg-brand-gold text-black rounded-lg px-6 py-3 text-sm font-semibold hover:bg-brand-gold-soft transition w-full sm:w-auto"
         >
           Request demo
         </button>

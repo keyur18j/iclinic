@@ -38,19 +38,19 @@ export function FeatureStream() {
   }, []);
 
   return (
-    <section className="relative w-full bg-[#f8f3eb] py-10 feature-stream">
+    <section className="relative w-full bg-brand-muted py-10 feature-stream">
       {/* top gradient fade */}
-      <div className="pointer-events-none absolute top-0 left-0 h-6 w-full bg-gradient-to-b from-[#f4ede4] to-transparent" />
+      <div className="pointer-events-none absolute top-0 left-0 h-6 w-full bg-gradient-to-b from-brand-muted to-transparent" />
 
       <div className="mx-auto max-w-6xl px-4">
-        <p className="mb-4 text-center text-[13px] font-medium tracking-wide text-slate-600">
+        <p className="mb-4 text-center text-[13px] font-medium tracking-wide text-gray-600">
           Live stream of what iClinic can handle
         </p>
 
         <div className="relative overflow-hidden">
           {/* side gradient masks */}
-          <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-[#f8f3eb] to-transparent" />
-          <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-[#f8f3eb] to-transparent" />
+          <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-brand-muted to-transparent" />
+          <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-brand-muted to-transparent" />
 
           {/* scrolling row */}
           <div className="marquee-smooth flex min-w-max gap-4 py-2">
@@ -62,8 +62,8 @@ export function FeatureStream() {
                     className="
                       inline-flex items-center gap-2 whitespace-nowrap
                       rounded-full bg-white/70 px-4 py-2
-                      text-[13px] text-slate-700 shadow-sm
-                      backdrop-blur-sm border border-slate-200/60
+                      text-[13px] text-brand-dark shadow-sm
+                      backdrop-blur-sm border border-brand-gold-soft/40
                     "
                   >
                     <span className="text-base">{feature.icon}</span>
@@ -77,7 +77,7 @@ export function FeatureStream() {
       </div>
 
       {/* bottom gradient fade */}
-      <div className="pointer-events-none absolute bottom-0 left-0 h-6 w-full bg-gradient-to-t from-[#f4ede4] to-transparent" />
+      <div className="pointer-events-none absolute bottom-0 left-0 h-6 w-full bg-gradient-to-t from-brand-muted to-transparent" />
     </section>
   );
 }

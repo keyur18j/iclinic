@@ -43,7 +43,7 @@ export default function ContactPage() {
     <div className="mx-auto max-w-3xl px-4 py-12 space-y-8">
       <div className="space-y-4">
         <h1 className="text-4xl font-bold">Contact us</h1>
-        <p className="text-lg text-slate-600 dark:text-slate-400">
+        <p className="text-lg text-gray-600 dark:text-gray-400">
           Have questions about iClinic? We&apos;re here to help. Send us a message
           and we&apos;ll get back to you as soon as possible.
         </p>
@@ -53,7 +53,7 @@ export default function ContactPage() {
         <div className="space-y-2">
           <label
             htmlFor="clinicName"
-            className="text-xs font-medium text-slate-700 dark:text-slate-300 block"
+            className="text-xs font-medium text-gray-700 dark:text-gray-300 block"
           >
             Clinic name <span className="text-red-500">*</span>
           </label>
@@ -64,14 +64,14 @@ export default function ContactPage() {
             required
             value={formData.clinicName}
             onChange={handleChange}
-            className="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500"
+            className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold"
           />
         </div>
 
         <div className="space-y-2">
           <label
             htmlFor="name"
-            className="text-xs font-medium text-slate-700 dark:text-slate-300 block"
+            className="text-xs font-medium text-gray-700 dark:text-gray-300 block"
           >
             Name <span className="text-red-500">*</span>
           </label>
@@ -82,14 +82,14 @@ export default function ContactPage() {
             required
             value={formData.name}
             onChange={handleChange}
-            className="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500"
+            className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold"
           />
         </div>
 
         <div className="space-y-2">
           <label
             htmlFor="email"
-            className="text-xs font-medium text-slate-700 dark:text-slate-300 block"
+            className="text-xs font-medium text-gray-700 dark:text-gray-300 block"
           >
             Email <span className="text-red-500">*</span>
           </label>
@@ -100,14 +100,14 @@ export default function ContactPage() {
             required
             value={formData.email}
             onChange={handleChange}
-            className="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500"
+            className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold"
           />
         </div>
 
         <div className="space-y-2">
           <label
             htmlFor="phone"
-            className="text-xs font-medium text-slate-700 dark:text-slate-300 block"
+            className="text-xs font-medium text-gray-700 dark:text-gray-300 block"
           >
             Phone
           </label>
@@ -117,14 +117,14 @@ export default function ContactPage() {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500"
+            className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold"
           />
         </div>
 
         <div className="space-y-2">
           <label
             htmlFor="message"
-            className="text-xs font-medium text-slate-700 dark:text-slate-300 block"
+            className="text-xs font-medium text-gray-700 dark:text-gray-300 block"
           >
             Message <span className="text-red-500">*</span>
           </label>
@@ -135,7 +135,7 @@ export default function ContactPage() {
             rows={6}
             value={formData.message}
             onChange={handleChange}
-            className="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 resize-none"
+            className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold resize-none"
           />
         </div>
 
@@ -157,7 +157,7 @@ export default function ContactPage() {
 
         <button
           type="submit"
-          className="bg-sky-500 text-background rounded-lg px-6 py-3 text-sm font-semibold hover:bg-sky-600 transition w-full sm:w-auto"
+          className="bg-brand-gold text-black rounded-lg px-6 py-3 text-sm font-semibold hover:bg-brand-gold-soft transition w-full sm:w-auto"
         >
           Send message
         </button>

@@ -2,8 +2,8 @@ export function ImpactBanner() {
   const stats = [
     {
       icon: "💰",
-      iconBg: "bg-orange-50 dark:bg-orange-950/20",
-      iconColor: "text-orange-500 dark:text-orange-400",
+      iconBg: "bg-brand-gold/10 dark:bg-brand-gold/20",
+      iconColor: "text-brand-gold dark:text-brand-gold",
       stat: "50%+",
       label: "Cost Reduction",
       description:
@@ -30,15 +30,15 @@ export function ImpactBanner() {
   ];
 
   return (
-    <section className="bg-sky-100 dark:bg-slate-950">
+    <section className="bg-brand-muted dark:bg-brand-dark">
       <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
         {/* Heading + Subtitle */}
         <div className="text-center">
-          <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 dark:text-slate-50">
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-gray-50">
             AI Voice Agents that Drive{" "}
-            <span className="text-[#f25b3f] dark:text-orange-500">Real ROI</span>
+            <span className="text-brand-gold">Real ROI</span>
           </h2>
-          <p className="mt-2 text-sm md:text-base text-slate-600 dark:text-slate-300">
+          <p className="mt-2 text-sm md:text-base text-gray-600 dark:text-gray-300">
             Faster calls. Lower costs. Higher accuracy. All with less effort from your
             team.
           </p>
@@ -49,7 +49,7 @@ export function ImpactBanner() {
           {stats.map((stat, idx) => (
             <div
               key={idx}
-              className="rounded-[32px] bg-white dark:bg-slate-900 shadow-sm border border-slate-100 dark:border-slate-800 px-6 py-8 flex flex-col items-center text-center gap-4"
+              className="rounded-[32px] bg-white dark:bg-gray-900 shadow-sm border border-gray-100 dark:border-gray-800 px-6 py-8 flex flex-col items-center text-center gap-4"
             >
               {/* Icon */}
               <div
@@ -59,20 +59,20 @@ export function ImpactBanner() {
               </div>
 
               {/* Main Stat */}
-              <div className="text-3xl md:text-4xl font-semibold text-slate-900 dark:text-slate-50">
+              <div className="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-gray-50">
                 {stat.stat}
               </div>
 
               {/* Label */}
-              <div className="text-sm md:text-base text-slate-800 dark:text-slate-200">
+              <div className="text-sm md:text-base text-gray-800 dark:text-gray-200">
                 {stat.label}
               </div>
 
               {/* Divider */}
-              <div className="mt-4 mb-4 h-px w-full bg-slate-100 dark:bg-slate-800" />
+              <div className="mt-4 mb-4 h-px w-full bg-gray-100 dark:bg-gray-800" />
 
               {/* Description */}
-              <p className="text-xs md:text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+              <p className="text-xs md:text-sm leading-relaxed text-gray-600 dark:text-gray-400">
                 {stat.description}
               </p>
             </div>

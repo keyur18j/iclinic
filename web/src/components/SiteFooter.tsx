@@ -41,7 +41,7 @@ const TwitterIcon = () => (
 
 export default function SiteFooter() {
   return (
-    <footer className="mt-16 bg-[#050505] text-slate-100">
+    <footer className="mt-16 bg-brand-dark text-gray-200">
       {/* Top panel */}
       <div className="mx-auto max-w-6xl px-4 py-10 md:py-14">
         <div className="flex flex-col gap-10 md:flex-row md:justify-between">
@@ -49,15 +49,15 @@ export default function SiteFooter() {
           <div className="space-y-4">
             {/* Logo */}
             <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded bg-sky-500 text-sm font-bold text-black">
+              <div className="flex h-8 w-8 items-center justify-center rounded bg-brand-gold text-sm font-bold text-black">
                 iM
               </div>
-              <span className="text-xl font-semibold">iClinic</span>
+              <span className="text-xl font-semibold text-white">iClinic</span>
             </div>
 
             {/* Tagline pill */}
             <div>
-              <span className="inline-flex items-center rounded-full border border-slate-700 px-4 py-1 text-xs text-slate-200">
+              <span className="inline-flex items-center rounded-full border border-gray-700 px-4 py-1 text-xs text-gray-300">
                 It&apos;s not magic. It&apos;s iClinic AI.
               </span>
             </div>
@@ -66,13 +66,13 @@ export default function SiteFooter() {
             <div className="flex flex-wrap gap-3">
               <Link
                 href="/book-demo"
-                className="inline-flex items-center justify-center rounded-full bg-slate-100 px-4 py-2 text-sm font-semibold text-black hover:bg-white transition"
+                className="inline-flex items-center justify-center rounded-full bg-brand-gold px-4 py-2 text-sm font-semibold text-black hover:bg-brand-gold-soft transition"
               >
                 Get Started
               </Link>
               <a
                 href="mailto:info@iClinic.ai"
-                className="inline-flex items-center justify-center rounded-full bg-slate-900 px-4 py-2 text-sm text-slate-100 border border-slate-700 hover:bg-slate-800 transition"
+                className="inline-flex items-center justify-center rounded-full bg-brand-dark-soft px-4 py-2 text-sm text-gray-100 border border-gray-500 hover:bg-brand-dark transition"
               >
                 info@iClinic.ai
               </a>
@@ -83,43 +83,43 @@ export default function SiteFooter() {
           <div className="grid grid-cols-1 gap-8 text-sm md:grid-cols-2">
             {/* Company column */}
             <div className="space-y-3">
-              <h3 className="text-xs font-semibold tracking-wide text-slate-400 uppercase">
+              <h3 className="text-xs font-semibold tracking-wide text-gray-400 uppercase">
                 Company
               </h3>
               <nav className="flex flex-col space-y-2">
                 <Link
                   href="/"
-                  className="block text-sm text-slate-200 hover:text-white transition"
+                  className="block text-sm text-gray-300 hover:text-brand-gold transition"
                 >
                   Home
                 </Link>
                 <Link
                   href="/business"
-                  className="block text-sm text-slate-200 hover:text-white transition"
+                  className="block text-sm text-gray-300 hover:text-brand-gold transition"
                 >
                   How it Works
                 </Link>
                 <Link
                   href="/use-cases"
-                  className="block text-sm text-slate-200 hover:text-white transition"
+                  className="block text-sm text-gray-300 hover:text-brand-gold transition"
                 >
                   Use Cases
                 </Link>
                 <Link
                   href="/products"
-                  className="block text-sm text-slate-200 hover:text-white transition"
+                  className="block text-sm text-gray-300 hover:text-brand-gold transition"
                 >
                   API
                 </Link>
                 <Link
                   href="/about-us"
-                  className="block text-sm text-slate-200 hover:text-white transition"
+                  className="block text-sm text-gray-300 hover:text-brand-gold transition"
                 >
                   About
                 </Link>
                 <Link
                   href="/blog"
-                  className="block text-sm text-slate-200 hover:text-white transition"
+                  className="block text-sm text-gray-300 hover:text-brand-gold transition"
                 >
                   Blog
                 </Link>
@@ -128,49 +128,49 @@ export default function SiteFooter() {
 
             {/* Who we Serve column */}
             <div className="space-y-3">
-              <h3 className="text-xs font-semibold tracking-wide text-slate-400 uppercase">
+              <h3 className="text-xs font-semibold tracking-wide text-gray-400 uppercase">
                 Who we Serve
               </h3>
               <nav className="flex flex-col space-y-2">
                 <Link
                   href="/use-cases"
-                  className="block text-sm text-slate-200 hover:text-white transition"
+                  className="block text-sm text-gray-300 hover:text-brand-gold transition"
                 >
                   Health Systems
                 </Link>
                 <Link
                   href="/use-cases"
-                  className="block text-sm text-slate-200 hover:text-white transition"
+                  className="block text-sm text-gray-300 hover:text-brand-gold transition"
                 >
                   Specialty Groups
                 </Link>
                 <Link
                   href="/use-cases"
-                  className="block text-sm text-slate-200 hover:text-white transition"
+                  className="block text-sm text-gray-300 hover:text-brand-gold transition"
                 >
                   Medical Billing
                 </Link>
                 <Link
                   href="/use-cases"
-                  className="block text-sm text-slate-200 hover:text-white transition"
+                  className="block text-sm text-gray-300 hover:text-brand-gold transition"
                 >
                   Pharma
                 </Link>
                 <Link
                   href="/use-cases"
-                  className="block text-sm text-slate-200 hover:text-white transition"
+                  className="block text-sm text-gray-300 hover:text-brand-gold transition"
                 >
                   EMRs
                 </Link>
                 <Link
                   href="/use-cases"
-                  className="block text-sm text-slate-200 hover:text-white transition"
+                  className="block text-sm text-gray-300 hover:text-brand-gold transition"
                 >
                   Dental
                 </Link>
                 <Link
                   href="/use-cases"
-                  className="block text-sm text-slate-200 hover:text-white transition"
+                  className="block text-sm text-gray-300 hover:text-brand-gold transition"
                 >
                   Payors
                 </Link>
@@ -181,8 +181,8 @@ export default function SiteFooter() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-slate-800">
-        <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-4 text-xs text-slate-500 md:flex-row md:justify-between">
+      <div className="border-t border-brand-dark-soft">
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-4 text-xs text-gray-500 md:flex-row md:justify-between">
           {/* Left - Copyright */}
           <div>
             © {currentYear} iClinic. All rights reserved.
@@ -197,7 +197,7 @@ export default function SiteFooter() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn"
-                className="flex items-center gap-1 text-slate-400 hover:text-slate-100 transition"
+                className="flex items-center gap-1 text-gray-400 hover:text-brand-gold transition"
               >
                 <LinkedInIcon />
               </a>
@@ -206,7 +206,7 @@ export default function SiteFooter() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="YouTube"
-                className="flex items-center gap-1 text-slate-400 hover:text-slate-100 transition"
+                className="flex items-center gap-1 text-gray-400 hover:text-brand-gold transition"
               >
                 <YouTubeIcon />
               </a>
@@ -215,7 +215,7 @@ export default function SiteFooter() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Twitter"
-                className="flex items-center gap-1 text-slate-400 hover:text-slate-100 transition"
+                className="flex items-center gap-1 text-gray-400 hover:text-brand-gold transition"
               >
                 <TwitterIcon />
               </a>
@@ -225,13 +225,13 @@ export default function SiteFooter() {
             <div className="flex items-center gap-4">
               <Link
                 href="/privacy"
-                className="text-slate-400 hover:text-slate-100 transition"
+                className="text-gray-400 hover:text-brand-gold transition"
               >
                 Privacy
               </Link>
               <Link
                 href="/terms"
-                className="text-slate-400 hover:text-slate-100 transition"
+                className="text-gray-400 hover:text-brand-gold transition"
               >
                 Terms
               </Link>

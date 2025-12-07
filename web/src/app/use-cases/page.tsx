@@ -31,7 +31,7 @@ export default function UseCasesPage() {
     <div className="mx-auto max-w-6xl px-4 py-12 space-y-12">
       <div className="space-y-4">
         <h1 className="text-4xl font-bold">Use cases</h1>
-        <p className="text-lg text-slate-600 dark:text-slate-400 max-w-3xl">
+        <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl">
           See how iClinic handles common scenarios to improve your clinic&apos;s
           efficiency and patient experience.
         </p>
@@ -41,20 +41,20 @@ export default function UseCasesPage() {
         {useCases.map((useCase, idx) => (
           <div
             key={idx}
-            className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 p-8 space-y-4"
+            className="rounded-xl border border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 p-8 space-y-4"
           >
             <h2 className="text-2xl font-semibold">{useCase.title}</h2>
             <div className="space-y-2">
-              <p className="font-medium text-slate-700 dark:text-slate-300">
+              <p className="font-medium text-gray-700 dark:text-gray-300">
                 Scenario:
               </p>
-              <p className="text-slate-600 dark:text-slate-400">{useCase.scenario}</p>
+              <p className="text-gray-600 dark:text-gray-400">{useCase.scenario}</p>
             </div>
             <div className="space-y-2">
-              <p className="font-medium text-slate-700 dark:text-slate-300">
+              <p className="font-medium text-gray-700 dark:text-gray-300">
                 How iClinic helps:
               </p>
-              <p className="text-slate-600 dark:text-slate-400">{useCase.solution}</p>
+              <p className="text-gray-600 dark:text-gray-400">{useCase.solution}</p>
             </div>
           </div>
         ))}

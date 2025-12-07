@@ -2,20 +2,37 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #111111;
+
+  /* Brand palette */
+  --brand-gold: #C9A44C;
+  --brand-gold-soft: #d5b463; /* slightly lighter for hovers, borders */
+  --brand-dark: #111111;
+  --brand-dark-soft: #181818;
+  --brand-muted: #f6f2e8; /* warm beige section background */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brand-gold: var(--brand-gold);
+  --color-brand-gold-soft: var(--brand-gold-soft);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-dark-soft: var(--brand-dark-soft);
+  --color-brand-muted: var(--brand-muted);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #050505;
+    --foreground: #f5f5f5;
+    --brand-gold: #C9A44C;
+    --brand-gold-soft: #d5b463;
+    --brand-dark: #000000;
+    --brand-dark-soft: #111111;
+    --brand-muted: #17130e;
   }
 }
 
