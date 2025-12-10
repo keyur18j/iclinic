@@ -1,55 +1,20 @@
 import Link from "next/link";
 import { ImpactBanner } from "@/components/ImpactBanner";
 import { FeatureStream } from "@/components/FeatureStream";
+import { FeatureShowcase } from "@/components/FeatureShowcase";
+import { HeroSection } from "@/components/HeroSection";
 
 export default function Home() {
   return (
-    <div className="mx-auto max-w-6xl px-4 py-12 space-y-16">
-      {/* Hero Section */}
-      <section className="grid gap-10 md:grid-cols-2 md:items-center">
-        <div className="space-y-6">
-          <div className="inline-block rounded-full bg-brand-gold/10 px-3 py-1 text-xs font-semibold text-brand-gold">
-            AI Front-Desk for Clinics
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-            AI Front-Desk for <span className="text-brand-gold">Clinics</span>
-          </h1>
-          <p className="text-xl text-brand-gold font-medium">
-            Instant answers, 24/7 scheduling, refills & messaging so your staff can focus on patient care.
-          </p>
-          <p className="text-gray-600 dark:text-gray-400">
-            Handles routine calls, scheduling, medication refill requests, and secure messages.
-            Works across phone, SMS and email.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Link
-              href="/book-demo"
-              className="rounded-md bg-brand-gold px-6 py-3 text-sm font-semibold text-black shadow-sm hover:bg-brand-gold-soft transition text-center"
-            >
-              Book a Demo
-            </Link>
-            <Link
-              href="/pricing"
-              className="rounded-md border border-gray-300 dark:border-gray-700 bg-transparent px-6 py-3 text-sm text-foreground hover:bg-gray-50 dark:hover:bg-gray-900 transition text-center"
-            >
-              See pricing & ROI
-            </Link>
-          </div>
-          <p className="text-xs text-gray-500 dark:text-gray-400">
-            One extra new patient per month can cover the full cost.
-          </p>
-        </div>
-        <div className="rounded-xl border border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 p-6 space-y-4">
-          <p className="text-sm font-medium text-gray-700 dark:text-gray-300">
-            Dashboard preview – calls, schedules & messages in one place
-          </p>
-          <div className="aspect-video rounded-lg bg-gradient-to-br from-brand-gold/10 to-brand-muted dark:from-gray-800 dark:to-gray-900 flex items-center justify-center">
-            <p className="text-sm text-gray-500 dark:text-gray-400">
-              Replace with real product screenshot later.
-            </p>
-          </div>
-        </div>
-      </section>
+    <main className="bg-background">
+      <HeroSection />
+
+      {/* Add clear gap before live feature stream */}
+      <div className="mt-20 md:mt-24">
+        <FeatureStream />
+      </div>
+
+      <FeatureShowcase />
 
       {/* Key Features Section */}
       <section className="space-y-6">
@@ -195,10 +160,8 @@ export default function Home() {
         </div>
       </section>
 
-      <FeatureStream />
-
       {/* Impact / ROI Banner */}
       <ImpactBanner />
-    </div>
+    </main>
   );
 }

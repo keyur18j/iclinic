@@ -38,7 +38,7 @@ export function FeatureStream() {
   }, []);
 
   return (
-    <section className="relative w-full bg-brand-muted py-10 feature-stream">
+    <section className="relative z-0 w-full bg-brand-muted py-10 feature-stream">
       {/* top gradient fade */}
       <div className="pointer-events-none absolute top-0 left-0 h-6 w-full bg-gradient-to-b from-brand-muted to-transparent" />
 

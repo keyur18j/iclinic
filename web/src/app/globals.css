@@ -59,3 +59,77 @@ body {
 .feature-stream:hover .marquee-smooth {
   animation-play-state: paused;
 }
+
+@keyframes feature-fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feature-fade {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+.feature-fade-visible {
+  animation: feature-fade-in-up 600ms ease-out forwards;
+}
+
+@keyframes feature-preview-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.feature-preview-fade {
+  animation: feature-preview-fade-in 450ms ease-out;
+}
+
+@keyframes hero-fade-up {
+  0% { opacity: 0; transform: translateY(16px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes hero-orbit-float {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+@keyframes hero-orbit-pulse {
+  0% { opacity: 0.5; transform: scale(0.98); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.hero-fade-up {
+  animation: hero-fade-up 700ms ease-out both;
+}
+
+.hero-fade-up-delayed {
+  animation: hero-fade-up 900ms ease-out both;
+}
+
+.hero-orbit-item {
+  animation: hero-orbit-float 4s ease-in-out infinite alternate;
+}
+
+/* staggered float delays */
+.hero-orbit-item:nth-child(2) { animation-delay: 0.4s; }
+.hero-orbit-item:nth-child(3) { animation-delay: 0.8s; }
+.hero-orbit-item:nth-child(4) { animation-delay: 1.2s; }
+.hero-orbit-item:nth-child(5) { animation-delay: 1.6s; }
+.hero-orbit-item:nth-child(6) { animation-delay: 2s; }
+.hero-orbit-item:nth-child(7) { animation-delay: 2.4s; }
+
+.hero-orbit-glow {
+  animation: hero-orbit-pulse 6s ease-in-out infinite alternate;
+}
