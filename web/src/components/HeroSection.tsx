@@ -43,13 +43,13 @@ export function HeroSection() {
 
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
-              href="/book-demo"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-full bg-[var(--brand-dark)] px-6 py-3 text-sm font-semibold text-white shadow-md hover:bg-black transition"
             >
               Book a demo ✨
             </Link>
             <Link
-              href="/products"
+              href="/product"
               className="inline-flex items-center justify-center rounded-full border border-[var(--brand-dark)] bg-white px-6 py-3 text-sm font-semibold text-[var(--brand-dark)] hover:bg-neutral-100 transition"
             >
               For clinics &amp; physicians →
@@ -111,7 +111,7 @@ export function HeroSection() {
                   Explore AI Receptionist ✨
                 </button> */}
                 <Link
-                  href="/receptionist"
+                  href="/product"
                   className="mt-4 inline-flex w-full items-center justify-center rounded-full 
                             bg-[var(--brand-dark)] px-3 py-2 text-[11px] font-semibold text-white 
                             hover:bg-black transition"

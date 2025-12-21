@@ -71,7 +71,7 @@ export default function ReceptionistActionPage() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-[var(--brand-dark)]">
-                  Vijaiganesh Nagarajan, MD
+                  Dr. Vijaiganesh Nagarajan, MD
                   </p>
                   <p className="text-xs text-neutral-500">
                     Medical Director, Multi-site Clinic

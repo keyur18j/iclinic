@@ -65,7 +65,7 @@ export default function SiteFooter() {
             {/* Buttons */}
             <div className="flex flex-wrap gap-3">
               <Link
-                href="/book-demo"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-full bg-brand-gold px-4 py-2 text-sm font-semibold text-black hover:bg-brand-gold-soft transition"
               >
                 Get Started
@@ -106,16 +106,16 @@ export default function SiteFooter() {
                   Use Cases
                 </Link>
                 <Link
-                  href="/products"
+                  href="/product"
                   className="block text-sm text-gray-300 hover:text-brand-gold transition"
                 >
-                  API
+                  Product
                 </Link>
                 <Link
-                  href="/about-us"
+                  href="/contact"
                   className="block text-sm text-gray-300 hover:text-brand-gold transition"
                 >
-                  About
+                  Contact
                 </Link>
                 <Link
                   href="/blog"

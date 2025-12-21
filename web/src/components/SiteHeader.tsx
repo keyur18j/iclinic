@@ -1,12 +1,9 @@
 import Link from "next/link";
 
 const navItems = [
-  { label: "Products", href: "/products" },
-  { label: "Business", href: "/business" },
-  { label: "Use cases", href: "/use-cases" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "Contact", href: "/contact" },
-  { label: "About us", href: "/about-us" },
+  { label: "Home", href: "/" },
+  { label: "Product", href: "/product" },
+  { label: "Contact us", href: "/contact" },
 ];
 
 export default function SiteHeader() {
@@ -38,7 +35,7 @@ export default function SiteHeader() {
 
         {/* Right side CTA */}
         <Link
-          href="/book-demo"
+          href="/contact"
           className="rounded-full bg-brand-gold px-4 py-2 text-sm font-semibold text-black hover:bg-brand-gold-soft transition"
         >
           Book a Demo

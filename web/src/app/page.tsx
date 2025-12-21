@@ -1,167 +1,70 @@
-import Link from "next/link";
 import { ImpactBanner } from "@/components/ImpactBanner";
 import { FeatureStream } from "@/components/FeatureStream";
 import { FeatureShowcase } from "@/components/FeatureShowcase";
-import { HeroSection } from "@/components/HeroSection";
+import { HeroCarousel } from "@/components/HeroCarousel";
 
 export default function Home() {
   return (
     <main className="bg-background">
-      <HeroSection />
+      {/* 1. Big hero carousel directly under navbar */}
+      <HeroCarousel />
 
-      {/* Add clear gap before live feature stream */}
-      <div className="mt-20 md:mt-24">
+      {/* 2–4. Other sections (no pricing here) */}
+      <div className="mt-20 space-y-20">
+        {/* Live rolling stream of features */}
         <FeatureStream />
-      </div>
 
-      <FeatureShowcase />
+        {/* Scroll-based feature explanation (if component exists) */}
+        <FeatureShowcase />
 
-      {/* Key Features Section */}
-      <section className="space-y-6">
-        <div className="text-center space-y-2">
-          <h2 className="text-3xl font-bold">Key features</h2>
-          <p className="text-gray-600 dark:text-gray-400">
-            Simplify clinic front-desk operations with AI-powered automation
-          </p>
-        </div>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {[
-            {
-              title: "AI Call Handling – No Waiting",
-              description: "Instant pickup, no hold music. Patients get immediate answers to their questions.",
-            },
-            {
-              title: "Smart Scheduling",
-              description: "Automated appointment booking, cancellations, and reminders to reduce no-shows.",
-            },
-            {
-              title: "Medication Refill Requests",
-              description: "Process refill requests automatically and route to providers for approval.",
-            },
-            {
-              title: "Automated Message Taking & Secure Inbox",
-              description: "AI captures messages accurately and routes them to the right provider inbox.",
-            },
-            {
-              title: "Omnichannel Confirmations",
-              description: "Send appointment confirmations via voice, SMS, and email based on patient preference.",
-            },
-            {
-              title: "EHR Integration Ready",
-              description: "Seamlessly integrates with major EHR systems for streamlined workflows.",
-            },
-          ].map((feature, idx) => (
-            <div
-              key={idx}
-              className="rounded-xl border border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 p-6 space-y-2"
-            >
-              <h3 className="font-semibold text-lg">{feature.title}</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
-                {feature.description}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
+        {/* ROI / percentages section */}
+        <section className="bg-[var(--brand-muted)]/40 py-12">
+          <div className="mx-auto max-w-6xl px-4">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--brand-gold)]">
+              Real impact
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold text-[var(--brand-dark)] md:text-3xl">
+              AI Voice Agents that drive real ROI.
+            </h2>
+            <p className="mt-3 max-w-2xl text-sm text-neutral-700">
+              Faster calls. Lower costs. Higher accuracy. All with less effort from your team.
+            </p>
 
-      {/* How it Works Section */}
-      <section className="space-y-6">
-        <h2 className="text-3xl font-bold text-center">How it works</h2>
-        <div className="grid gap-6 md:grid-cols-4">
-          {[
-            { step: "1", title: "Patient calls or messages", description: "Patient reaches out via phone, SMS, or email" },
-            { step: "2", title: "AI front-desk answers immediately", description: "AI handles the interaction instantly, 24/7" },
-            { step: "3", title: "Schedules / Processes / Takes message", description: "AI books appointments, processes refills, or captures messages" },
-            { step: "4", title: "Sends summary to EHR", description: "All interactions are logged and routed to provider inbox" },
-          ].map((item, idx) => (
-            <div
-              key={idx}
-              className="rounded-xl border border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 p-6 space-y-2 text-center"
-            >
-              <div className="w-10 h-10 rounded-full bg-brand-gold text-black flex items-center justify-center font-bold mx-auto">
-                {item.step}
+            <div className="mt-8 grid gap-6 md:grid-cols-3">
+              <div className="rounded-3xl bg-white p-6 shadow-sm">
+                <p className="text-3xl font-semibold text-[var(--brand-gold)]">50%+</p>
+                <p className="mt-1 text-sm font-medium text-[var(--brand-dark)]">
+                  Cost reduction
+                </p>
+                <p className="mt-3 text-xs text-neutral-600">
+                  Automates phone-based workflows to slash manual effort and lower
+                  costs without sacrificing patient experience.
+                </p>
               </div>
-              <h3 className="font-semibold">{item.title}</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
-                {item.description}
-              </p>
+
+              <div className="rounded-3xl bg-white p-6 shadow-sm">
+                <p className="text-3xl font-semibold text-[var(--brand-gold)]">20%+</p>
+                <p className="mt-1 text-sm font-medium text-[var(--brand-dark)]">
+                  Revenue increase
+                </p>
+                <p className="mt-3 text-xs text-neutral-600">
+                  More appointments, tighter scheduling, and better provider utilization.
+                </p>
+              </div>
+
+              <div className="rounded-3xl bg-white p-6 shadow-sm">
+                <p className="text-3xl font-semibold text-[var(--brand-gold)]">99%+</p>
+                <p className="mt-1 text-sm font-medium text-[var(--brand-dark)]">
+                  QA accuracy
+                </p>
+                <p className="mt-3 text-xs text-neutral-600">
+                  Reviews every call, delivering near-perfect accuracy at scale.
+                </p>
+              </div>
             </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Trust / Compliance Strip */}
-      <section className="flex flex-wrap gap-3 justify-center">
-        {[
-          "HIPAA-focused design",
-          "Built on AWS",
-          "Supported by modern AI infrastructure",
-        ].map((badge, idx) => (
-          <span
-            key={idx}
-            className="px-4 py-2 rounded-full bg-brand-muted dark:bg-brand-dark-soft text-xs font-medium text-gray-700 dark:text-gray-300"
-          >
-            {badge}
-          </span>
-        ))}
-      </section>
-
-      {/* Pricing Teaser */}
-      <section className="rounded-xl border border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 p-8 space-y-4 text-center max-w-2xl mx-auto">
-        <h2 className="text-2xl font-bold">Simple, transparent pricing</h2>
-        <p className="text-lg font-semibold text-brand-gold">
-          Starts at $250/month per provider (up to 1000 minutes).
-        </p>
-        <p className="text-sm text-gray-600 dark:text-gray-400">
-          One missed appointment can cost more than the monthly subscription.
-        </p>
-        <Link
-          href="/pricing"
-          className="inline-block bg-brand-gold text-black rounded-lg px-6 py-3 text-sm font-semibold hover:bg-brand-gold-soft transition"
-        >
-          View full pricing
-        </Link>
-      </section>
-
-      {/* FAQ Teaser */}
-      <section className="space-y-6 max-w-3xl mx-auto">
-        <h2 className="text-3xl font-bold text-center">Frequently asked questions</h2>
-        <div className="space-y-4">
-          {[
-            {
-              question: "Is this HIPAA-compliant?",
-              answer: "Yes. iClinic is built with HIPAA-focused design principles and uses secure, encrypted infrastructure to protect patient data.",
-            },
-            {
-              question: "Does it work with my EHR?",
-              answer: "iClinic uses standards-based integration protocols. We support integration with major EHR systems. Contact us for specific compatibility details.",
-            },
-            {
-              question: "How long does setup take?",
-              answer: "Most clinics start in days, not months. Our streamlined onboarding process gets you up and running quickly.",
-            },
-          ].map((faq, idx) => (
-            <div
-              key={idx}
-              className="rounded-xl border border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 p-6 space-y-2"
-            >
-              <h3 className="font-semibold">{faq.question}</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">{faq.answer}</p>
-            </div>
-          ))}
-        </div>
-        <div className="text-center pt-4">
-          <Link
-            href="/contact"
-            className="text-sm text-brand-gold hover:underline"
-          >
-            Have more questions? Contact us
-          </Link>
-        </div>
-      </section>
-
-      {/* Impact / ROI Banner */}
-      <ImpactBanner />
+          </div>
+        </section>
+      </div>
     </main>
   );
 }
